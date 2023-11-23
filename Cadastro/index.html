@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>StableSound - Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="../Stable_Core/CSS/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../Stable_Core/CSS/Main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container" id="navbar">
+		<nav class="navbar navbar-expand-md navbar-light">
+			<a href="../index.html" class="navbar-brand"><i class="fas fa-music"></i> StableSound
+			</a>
+			<button 
+            	class="navbar-toggler" 
+            	type="button" 
+            	data-bs-toggle="collapse" 
+            	data-bs-target="#toggleMobileMenu" 
+            	aria-controls="toggleMobileMenu" 
+            	aria-expanded="false" 
+            	aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            
+                <ul class="navbar-nav ms-auto text-center">
+                    <li>
+                        <a class="nav-link" id="nav-item" href="Cadastro"><i class="fas fa-user"></i> </i> Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+		</nav>
+	</div>
+	<br/>
+	<div class="container" id="register">
+		<h1 style="text-align: center;">CADASTRO</h1>
+		<br/>
+		<form action="http://ip.ifrn.edu.br/sirab/send.php" method="POST">
+		  <div class="row">
+		    <div class="col">
+		    	<label>Nome</label>
+		      <input type="text" class="form-control" name="Nome" placeholder="Nome" id="Nome">
+		    </div>
+		    <div class="col">
+		    	<label>Sobrenome</label>
+		      <input type="text" class="form-control" name="Sobrenome" placeholder="Sobrenome">
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col">
+		    	<label>CPF</label>
+		      <input type="text" class="form-control" name="CPF" id="CPF" placeholder="CPF">
+		    </div>
+		    <div class="col">
+		    	<label>Data de Nascimento</label>
+		      <input type="text" class="form-control" id="nascimento" name="DataDeNascimento" placeholder="Data de Nascimento" maxlength="10" onkeypress="mascaraData(this)">
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col">
+		    	<label>Telefone</label>
+		      <input type="tel" class="form-control" name="Telefone" id="telefone" placeholder="Telefone">
+		    </div>
+		    <div class="form-group col-md-2">
+		      <label>Sexo</label>
+		      <select class="form-control" name="Sexo">
+		      	<option value="">Selecione</option>
+			    <option value="Masculino">Masculino</option>
+			    <option value="Feminino">Feminino</option>
+		      </select>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="form-group col-md-6">
+		      <label for="inputEmail4">Email</label>
+		      <input type="email" class="form-control" name="Email" placeholder="Email">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <label for="inputPassword4">Senha</label>
+		      <input type="password" class="form-control" name="Senha" placeholder="Senha">
+		    </div>
+		  </div>
+		  <div class="row">
+		  	<div class="form-group col-md-4">
+		    	<label for="inputAddress">Endereço</label>
+		    	<input type="text" class="form-control" name="Logradouro" placeholder="Rua Aleatoria, nº 0">
+		  	</div>
+		  	<div class="form-group col-md-2">
+		    	<label for="inputAddress">Complemento</label>
+		    	<input type="text" class="form-control" name="Complemento" placeholder="Casa, apt...">
+		  	</div>
+		    <div class="form-group col-md-2">
+		      <label for="inputCity">Cidade</label>
+		      <input type="text" class="form-control" name="Cidade" placeholder="Cidade">
+		    </div>
+		    <div class="form-group col-md-2">
+		      <label for="inputEstado">Estado</label>
+		      <select id="inputEstado" class="form-control" name="Estado">
+		      	<option value="">Selecione</option>
+			    <option value="AC">Acre</option>
+			    <option value="AL">Alagoas</option>
+			    <option value="AP">Amapá</option>
+			    <option value="AM">Amazonas</option>
+			    <option value="BA">Bahia</option>
+			    <option value="CE">Ceará</option>
+			    <option value="DF">Distrito Federal</option>
+			    <option value="ES">Espírito Santo</option>
+			    <option value="GO">Goiás</option>
+			    <option value="MA">Maranhão</option>
+			    <option value="MT">Mato Grosso</option>
+			    <option value="MS">Mato Grosso do Sul</option>
+			    <option value="MG">Minas Gerais</option>
+			    <option value="PA">Pará</option>
+			    <option value="PB">Paraíba</option>
+			    <option value="PR">Paraná</option>
+			    <option value="PE">Pernambuco</option>
+			    <option value="PI">Piauí</option>
+			    <option value="RJ">Rio de Janeiro</option>
+			    <option value="RN">Rio Grande do Norte</option>
+			    <option value="RS">Rio Grande do Sul</option>
+			    <option value="RO">Rondônia</option>
+			    <option value="RR">Roraima</option>
+			    <option value="SC">Santa Catarina</option>
+			    <option value="SP">São Paulo</option>
+			    <option value="SE">Sergipe</option>
+			    <option value="TO">Tocantins</option>
+		      </select>
+		    </div>
+		    <div class="form-group col-md-2">
+		      <label for="inputCEP">CEP</label>
+		      <input type="text" name="CEP" id="cep" class="form-control" placeholder="CEP">
+		    </div>
+		  </div>
+		  <div class="form-check">
+		  	<br/>
+		    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="ReceberPromo">
+		    <label class="form-check-label" for="exampleCheck1">Desejo receber promoções por email</label>
+		  </div>
+		  <button type="submit" class="btn btn-primary" onclick="return validadata();">Cadastrar</button>
+		</form>
+		  </div>
+		  </div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<footer>
+	  <p>Somos Uma Empresa Revendedora de Produtos Profissionais do Ramo Musical.</p>
+	  <p>Av. Ficticia Número 000 Nova Cruz (RN).</p>
+	  <p>(84) 99999-9999</p>
+	  <h2><i class="fas fa-music"> StableSound</i></h2>
+	</footer>
+</body>
+<script src="../Stable_Core/JS/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.es.gov.br/scripts/jquery/jquery-maskedinput/1.4.1/jquery.maskedinput-1.4.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#CPF").mask("999.999.999-99");
+	});
+</script>
+<script>
+	function mascaraData(val) {
+	  var pass = val.value;
+	  var expr = /[0123456789]/;
+
+	  for (i = 0; i < pass.length; i++) {
+	    // charAt -> retorna o caractere posicionado no índice especificado
+	    var lchar = val.value.charAt(i);
+	    var nchar = val.value.charAt(i + 1);
+
+	    if (i == 0) {
+	      // search -> retorna um valor inteiro, indicando a posição do inicio da primeira
+	      // ocorrência de expReg dentro de instStr. Se nenhuma ocorrencia for encontrada o método retornara -1
+	      // instStr.search(expReg);
+	      if ((lchar.search(expr) != 0) || (lchar > 3)) {
+	        val.value = "";
+	      }
+
+	    } else if (i == 1) {
+
+	      if (lchar.search(expr) != 0) {
+	        // substring(indice1,indice2)
+	        // indice1, indice2 -> será usado para delimitar a string
+	        var tst1 = val.value.substring(0, (i));
+	        val.value = tst1;
+	        continue;
+	      }
+
+	      if ((nchar != '/') && (nchar != '')) {
+	        var tst1 = val.value.substring(0, (i) + 1);
+
+	        if (nchar.search(expr) != 0)
+	          var tst2 = val.value.substring(i + 2, pass.length);
+	        else
+	          var tst2 = val.value.substring(i + 1, pass.length);
+
+	        val.value = tst1 + '/' + tst2;
+	      }
+
+	    } else if (i == 4) {
+
+	      if (lchar.search(expr) != 0) {
+	        var tst1 = val.value.substring(0, (i));
+	        val.value = tst1;
+	        continue;
+	      }
+
+	      if ((nchar != '/') && (nchar != '')) {
+	        var tst1 = val.value.substring(0, (i) + 1);
+
+	        if (nchar.search(expr) != 0)
+	          var tst2 = val.value.substring(i + 2, pass.length);
+	        else
+	          var tst2 = val.value.substring(i + 1, pass.length);
+
+	        val.value = tst1 + '/' + tst2;
+	      }
+	    }
+
+	    if (i >= 6) {
+	      if (lchar.search(expr) != 0) {
+	        var tst1 = val.value.substring(0, (i));
+	        val.value = tst1;
+	      }
+	    }
+	  }
+
+	  if (pass.length > 10)
+	    val.value = val.value.substring(0, 10);
+	  return true;
+	}
+</script>
+<script>
+$(document).ready(function(){
+	$("#cep").mask("99.999-999");
+});
+</script>
+<script>
+jQuery("input#telefone")
+        .mask("(99) 9999-9999?9")
+        .focusout(function (event) {  
+            var target, phone, element;  
+            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
+            phone = target.value.replace(/\D/g, '');
+            element = $(target);  
+            element.unmask();  
+            if(phone.length > 10) {  
+                element.mask("(99) 99999-999?9");  
+            } else {  
+                element.mask("(99) 9999-9999?9");  
+            }  
+        });
+</script>
+<script>
+	function validadata(){
+	   var data = document.getElementById("nascimento").value; // pega o valor do input
+	   data = data.replace(/\//g, "-"); // substitui eventuais barras (ex. IE) "/" por hífen "-"
+	   var data_array = data.split("-"); // quebra a data em array
+	   
+	   // para o IE onde será inserido no formato dd/MM/yyyy
+	   if(data_array[0].length != 4){
+	      data = data_array[2]+"-"+data_array[1]+"-"+data_array[0]; // remonto a data no formato yyyy/MM/dd
+	   }
+	   
+	   // comparo as datas e calculo a idade
+	   var hoje = new Date();
+	   var nasc  = new Date(data);
+	   var idade = hoje.getFullYear() - nasc.getFullYear();
+	   var m = hoje.getMonth() - nasc.getMonth();
+	   if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())) idade--;
+	   
+	   if(idade < 18){
+	      alert("Pessoas menores de 18 não podem se cadastrar.");
+	      return false;
+	   }
+
+	   if(idade >= 18 && idade <= 60){
+	      return true;
+	   }
+	   
+	   // se for maior que 60 não vai acontecer nada!
+	   return false;
+	}
+</script>
+</html>
